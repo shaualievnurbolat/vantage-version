@@ -1,0 +1,168 @@
+
+/* Общие стили для сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Стили для "about me" */
+
+.header {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.header-bg {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+    background-color: #000;
+}
+.header-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Основной текст aboutme */
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    /* Общие стили для блока */
+}
+.header-wrapper {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-wrapper__inner {
+    width: 600px;
+}
+.header-wrapper__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 50px;
+    transition: .5s all;
+
+    width: 200px;
+    height: 50px;
+    border: 3px solid #FFB90C;
+    font-family: 'Playfair Display';
+    font-size: 24px;
+}
+.header-wrapper__btn:hover {
+    background-color: #FFB90C;
+    color: #000;
+}
+.header-wrapper__inner h1 {
+    font-size: 54px;
+    font-family: 'Playfair Display', serif;
+    color: #FFB90C;
+}
+.header-wrapper__img { 
+    width: 500px;
+    height: 500px;
+    background-color: #FFB90C;
+}
+.header-wrapper__img img {
+    width: 480px;
+    height: 480px;
+}
+
+
+.header__menu {
+    position: fixed;
+    z-index: 3;
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+}
+ul {
+    display: flex;
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__link {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    transition: .2s all;
+}
+.header__link:hover {
+    text-decoration: underline;
+    color: #FFB90C;
+}
+
+
+/* .hobby {
+    height: 100vh;
+} */
+
+/* адаптация */
+
+@media all and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container {
+        max-width: 320px;
+    }
+}
