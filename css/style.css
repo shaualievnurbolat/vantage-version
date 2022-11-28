@@ -137,9 +137,21 @@ ul {
 
 /* адаптация */
 
+@media all and (max-width: 1500px) {
+    .container {
+        max-width: 1350px;
+    }
+    .header__menu ul {
+        width: 1350px;
+    }
+}
+
 @media all and (max-width: 1400px) {
     .container {
         max-width: 1140px;
+    }
+    .header__menu ul {
+        width: 1140px;
     }
 }
 
@@ -147,11 +159,21 @@ ul {
     .container {
         max-width: 960px;
     }
+    .header__menu ul {
+        width: 960px;
+    }
+
+    .header-wrapper__img {
+        display: none;
+    }
 }
 
 @media all and (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .header__menu ul {
+        width: 720px;
     }
 }
 
@@ -159,10 +181,31 @@ ul {
     .container {
         max-width: 540px;
     }
+    .header__menu ul {
+        width: 540px;
+    }
+
+    .header-wrapper {
+        margin-top: 70px;
+    }
+    .header-wrapper__inner h1 {
+        font-size: 38px;
+    }
+    .header-wrapper__inner p {
+        font-size: 16px;
+        font-weight: 200;
+        margin-top: 10px;
+    }
+    .header__menu {
+        display: none;
+    }
 }
 
 @media all and (max-width: 576px) {
     .container {
         max-width: 320px;
+    }
+    .header__menu ul {
+        width: 320px;
     }
 }
