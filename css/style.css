@@ -197,7 +197,21 @@ ul {
         margin-top: 10px;
     }
     .header__menu {
+        background: none;
+    }
+    .header__menu li {
         display: none;
+    }
+    .hamburger {
+        width: 30px;
+        height: 30px;
+    }
+    .hamburger span{
+        display: block;
+        margin-top: 5px;
+        width: 30px;
+        height: 4px;
+        background-color: #FFB90C;
     }
 }
 
