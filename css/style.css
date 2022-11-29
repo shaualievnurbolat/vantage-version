@@ -130,6 +130,14 @@ ul {
     color: #FFB90C;
 }
 
+.hamburger {
+    display: none;
+}
+
+.mobile-background {
+    display: none;
+}
+
 
 /* .hobby {
     height: 100vh;
@@ -203,6 +211,8 @@ ul {
         display: none;
     }
     .hamburger {
+        display: block;
+        cursor: pointer;
         width: 30px;
         height: 30px;
     }
@@ -212,6 +222,12 @@ ul {
         width: 30px;
         height: 4px;
         background-color: #FFB90C;
+    }
+    .desktop-background {
+        display: none;
+    }
+    .mobile-background {
+        display: block;
     }
 }
 
